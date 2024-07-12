@@ -11,7 +11,7 @@ endif
 
 UNAME_M := $(shell uname -m)
 ifneq ($(UNAME_M),x86_64)
-	QEMU =  qemu-x86_64
+	QEMU =  qemu-x86_64 -L /usr/x86_64-linux-gnu/
 endif
 
 AML_ENCRYPT ?= aml_encrypt_g12a

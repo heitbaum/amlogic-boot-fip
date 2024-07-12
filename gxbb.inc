@@ -4,7 +4,7 @@ BL33 ?=
 
 UNAME_M := $(shell uname -m)
 ifneq ($(UNAME_M),x86_64)
-	QEMU =  qemu-x86_64
+	QEMU =  qemu-x86_64 -L /usr/x86_64-linux-gnu/
 endif
 
 .PHONY: clean distclean
